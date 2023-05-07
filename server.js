@@ -8,6 +8,7 @@ app.listen(PORT, function () {
 })
 
 app.get('/', function (req, res) {
+    console.log('index');
     return res.sendFile(path.join(__dirname, 'Pages', 'index.html'));
 })
 

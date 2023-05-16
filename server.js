@@ -18,7 +18,6 @@ app.get('/download/resume/AmirulAsraf', function (req, res) {
     return res.sendFile(path.join(__dirname, 'Resume', 'AmirulAsraf.pdf'))
 })
 
-app.use('/bootstrap/', express.static(path.join(__dirname, 'node_modules', 'bootstrap')))
 
 app.use('/',
     function (req, res, next) {
